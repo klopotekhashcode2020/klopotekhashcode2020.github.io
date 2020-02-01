@@ -69,7 +69,7 @@
 					</span>
 					<span> Hub</span>
 				</h1>
-				<div class="hero-meta mb-3"><i class="far fa-calendar-alt mr-2"></i>20 Feb<i class="fas fa-map-marker-alt mx-2"></i>Gioia del Colle, Italy</div>
+				<div class="hero-meta mb-3"><i class="far fa-calendar-alt mr-2 title-icon"></i>20 Feb<i class="fas fa-map-marker-alt mx-2 title-icon"></i>Gioia del Colle, Italy</div>
 				<div class="hero-intro mb-4">Google’s team-based programming competition.</div>
 				<div class="hero-cta"><a class="btn btn-secondary scrollto btn-lg scrollto" href="#subscribe-section">Subscribe</a></div>
 				
@@ -77,9 +77,9 @@
 		</div><!--//container-->
 
 	</div><!--//hero-block-->
-	
-	<div class="stats-block theme-bg-primary text-white py-4 text-center">
-	</div><!--//stats-block-->
+
+	<!--<div class="stats-block theme-bg-primary text-white py-4 text-center">
+	</div>//stats-block-->
 
 	<section id="about-section" class="about-section section theme-bg-light">
 		<div class="container">
@@ -304,7 +304,7 @@
 	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
 	<script src="assets/plugins/back-to-top.js"></script>
 	<script src="assets/plugins/jquery.scrollTo.min.js"></script>
-	<script src="assets/js/main.js"></script>  
+	<script src="assets/js/main.js"></script>
 
 </body>
 </html>
@@ -328,5 +328,36 @@
 
 	#topcontrol:hover {
 		background: #e73830;
+	}
+
+	.title-icon {
+		color: #9E9E9E;
+	}
+
+	.hero-carousel .carousel-item-1 {
+		background-size: cover;
+	}
+
+	#hero-block {
+		min-height: 620px;
+		padding-bottom: 5rem;
+	}
+
+	#hero-block .container {
+		height: 100%;
+	}
+
+	#hero-block .container .hero-text-block {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	#hero-block .container .hero-text-block .hero-intro {
+		flex-grow: 1;
+	}
+
+	.venue-section .figure.figure-2 {
+		background: white;
 	}
 </style>
