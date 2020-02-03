@@ -61,19 +61,25 @@
 		</div>
 		<div class="hero-block-mask"></div>
 		<div class="container">
-			<div class="hero-text-block">
-				<h1 class="hero-heading mb-2">Google Hash Code 2020 - Klopotek Hub</h1>
-				<div class="hero-meta mb-3"><i class="far fa-calendar-alt mr-2"></i>20 Feb<i class="fas fa-map-marker-alt mx-2"></i>Gioia del Colle, Italy</div>
+			<div class="hero-text-block" style="max-width: 100%">
+				<h1 class="hero-heading mb-2">Google Hash Code 2020</h1>
+				<h1 class="hero-heading mb-3">
+					<span style="color: #b50000;text-shadow: 0 3px 3px rgba(255,255,255,0.5), 0 3px 3px rgba(255,255,255,0.5), -3px 0 3px rgba(255,255,255,0.5), 0 -3px 3px rgba(255,255,255,0.5);">
+						Klopotek
+					</span>
+					<span> Hub</span>
+				</h1>
+				<div class="hero-meta mb-3"><i class="far fa-calendar-alt mr-2 title-icon"></i>20 Feb<i class="fas fa-map-marker-alt mx-2 title-icon"></i>Gioia del Colle, Italy</div>
 				<div class="hero-intro mb-4">Google’s team-based programming competition.</div>
-				<div class="hero-cta"><a class="btn btn-primary btn-lg scrollto" href="#subscribe-section">Subscribe</a></div>
+				<div class="hero-cta"><a class="btn btn-secondary scrollto btn-lg scrollto" href="#subscribe-section">Subscribe</a></div>
 				
 			</div><!--//hero-text-block-->
 		</div><!--//container-->
 
 	</div><!--//hero-block-->
-	
-	<div class="stats-block theme-bg-primary text-white py-4 text-center">
-	</div><!--//stats-block-->
+
+	<!--<div class="stats-block theme-bg-primary text-white py-4 text-center">
+	</div>//stats-block-->
 
 	<section id="about-section" class="about-section section theme-bg-light">
 		<div class="container">
@@ -106,7 +112,7 @@
 			<!-- Nav tabs -->
 			<ul class="schedule-nav nav nav-pills nav-fill" id="myTab" role="tablist">
 				<li class="nav-item mr-2">
-					<a class="nav-link active" id="tab-1" data-toggle="tab" href="#tab-1-content" role="tab" aria-controls="tab-1-content" aria-selected="true">
+					<a class="nav-link active" id="tab-1" aria-controls="tab-1-content" aria-selected="true">
 						<span class="heading">Day 1</span>
 						<span class="meta">(Thu 20, Feb)</span>
 					</a>
@@ -298,8 +304,61 @@
 	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
 	<script src="assets/plugins/back-to-top.js"></script>
 	<script src="assets/plugins/jquery.scrollTo.min.js"></script>
-	<script src="assets/js/main.js"></script>  
+	<script src="assets/js/main.js"></script>
 
 </body>
-</html> 
+</html>
 
+<style>
+	a:not([href]):not([tabindex]):hover, a:not([href]):not([tabindex]):focus {
+		color: #fff!important;
+	}
+
+	.btn-secondary {
+		background: #b50000;
+	}
+
+	a:hover {
+		color: #e73830;
+	}
+
+	#topcontrol {
+		background: #b50000;
+	}
+
+	#topcontrol:hover {
+		background: #e73830;
+	}
+
+	.title-icon {
+		color: #9E9E9E;
+	}
+
+	.hero-carousel .carousel-item-1 {
+		background-size: cover;
+	}
+
+	#hero-block {
+		min-height: 620px;
+		padding-bottom: 5rem;
+		text-align: center;
+	}
+
+	#hero-block .container {
+		height: 100%;
+	}
+
+	#hero-block .container .hero-text-block {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	#hero-block .container .hero-text-block .hero-intro {
+		flex-grow: 1;
+	}
+
+	.venue-section .figure.figure-2 {
+		background: white;
+	}
+</style>

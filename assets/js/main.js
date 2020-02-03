@@ -98,8 +98,29 @@ $(document).ready(function() {
         secs_span.innerHTML = '<span class="number">' + seconds + '</span>' + '<span class="unit">Secs</span>'; 
      
     }, 1000);
-    
-    
-        
 
+
+    var setHeight = function() {
+        var h = $(window).height();
+        $('#hero-block').css('height', h);
+    };
+
+    setHeight(); // at first run of webpage we set css height with a fixed value
+
+    if(typeof window.orientation !== 'undefined') { // this is more smart to detect mobile devices because desktop doesn't support this property
+        var query = window.matchMedia("(orientation:landscape)"); //this is is important to verify if we put
+        var changeHeight = function(query) {                      //mobile device in landscape mode
+            if (query.matches) {                                    // if yes we set again height to occupy 100%
+                setHeight(); // landscape mode
+            } else {                                                //if we go back to portrait we set again
+                setHeight(); // portrait mode
+            }
+        };
+        query.addListener(changeHeight);                          //add a listner too this event
+    }
+    else { //desktop mode                                       //this last part is only for non mobile
+        $( window ).resize(function() {                           // so in this case we use resize to have
+            setHeight();                                            // responsivity resisizing browser window
+        });
+    }
 });
